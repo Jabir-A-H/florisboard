@@ -1,0 +1,72 @@
+{
+  "all": {
+    "দ": { "main": { "code": 2471, "label": "ধ" }},
+    "ূ": { "main": { "code": 2442, "label": "ঊ" }},
+    "ী": { "main": { "code": 2440, "label": "ঈ" }},
+    "র": { "main": { "code": 2524, "label": "ড়" }, "relevant": [{ "$": "multi_text_key", "codePoints": [2480, 8205, 2509, 2479], "label": "র‍্য" }]},
+    "ট": { "main": { "code": 2464, "label": "ঠ" }},
+    "এ": { "main": { "code": 2448, "label": "ঐ" }},
+    "ু": { "main": { "code": 2441, "label": "উ" }},
+    "ি": { "main": { "code": 2439, "label": "ই" }},
+    "ও": { "main": { "code": 2452, "label": "ঔ" }},
+    "প": { "main": { "code": 2475, "label": "ফ" }},
+    "ে": { "main": { "code": 2504, "label": "ৈ" }},
+    "ো": { "main": { "code": 2508, "label": "ৌ" }},
+    "া": { "main": { "code": 2437, "label": "অ" }},
+    "স": { "main": { "code": 2487, "label": "ষ" }},
+    "ড": { "main": { "code": 2466, "label": "ঢ" }},
+    "ত": { "main": { "code": 2469, "label": "থ" }, "relevant": [{ "code": 2510, "label": "ৎ" }]},
+    "গ": { "main": { "code": 2456, "label": "ঘ" }},
+    "হ": { "main": { "code": 2435, "label": "ঃ" }},
+    "জ": { "main": { "code": 2461, "label": "ঝ" }},
+    "ক": { "main": { "code": 2454, "label": "খ" }},
+    "ল": { "main": { "code": 2434, "label": "ং" }},
+    "্": { "relevant": [{ "code": 2433, "label": "ঁ" }] },
+    "়": { "relevant": [{ "code": 2499, "label": "ৃ" }, { "code": 2510, "label": "ৎ" }, { "code": 2462, "label": "ঞ" }] },
+    "য়": { "main": { "$": "multi_text_key", "codePoints": [2509, 2479], "label": "্য" }, "relevant": [{ "code": 2479, "label": "য" }] },
+    "শ": { "main": { "code": 2525, "label": "ঢ়" }},
+    "চ": { "main": { "code": 2459, "label": "ছ" }},
+    "আ": { "main": { "code": 2443, "label": "ঋ" }},
+    "ব": { "main": { "code": 2477, "label": "ভ" }},
+    "ন": { "main": { "code": 2467, "label": "ণ" }},
+    "ম": { "main": { "code": 2457, "label": "ঙ" }},
+    "ঁ": { "main": { "code": 2492, "label": "়" }, "relevant": [
+        { "code": 2544, "label": "ৰ" },
+        { "code": 2545, "label": "ৱ" },
+        { "code": 2493, "label": "ঽ" },
+        { "code": 2554, "label": "৺" },
+        { "code": 2519, "label": "ৗ" },
+        { "code": 2500, "label": "ৄ" },
+        { "code": 2528, "label": "ৠ" },
+        { "code": 2444, "label": "ঌ" },
+        { "code": 2529, "label": "ৡ" },
+        { "code": 2530, "label": "ৢ" },
+        { "code": 2531, "label": "ৣ" }
+      ]},
+    "~right": { "main": { "code": 44, "label": "," }, "relevant": [
+        { "code": 37, "label": "%" },
+        { "code": 43, "label": "+" },
+        { "code": 45, "label": "-" },
+        { "code": 58, "label": ":" },
+        { "code": 59, "label": ";" },
+        { "code": 47, "label": "/" },
+        { "$": "layout_direction_selector", "ltr": { "code": 40, "label": "(" }, "rtl": { "code": 41,  "label": "(" }},
+        { "$": "layout_direction_selector", "ltr": { "code": 41,  "label": ")" }, "rtl": { "code": 40, "label": ")" } },
+        { "code": 64, "label": "@" },
+        { "code": 35, "label": "#" },
+        { "code": 8205, "label": "▸|◂" },
+        { "code": 8204, "label": "◂|▸" },
+        { "code": 33, "label": "!" },
+        { "code": 63, "label": "?" },
+        { "code": 2405, "label": "॥" }
+      ]}
+  },
+  "uri": {
+    "~right": { "main": { "code": -255, "label": ".com" }, "relevant": [
+        { "code": -255, "label": ".org" },
+        { "code": -255, "label": ".com.bd" },
+        { "code": -255, "label": ".bd" },
+        { "code": -255, "label": ".net" }
+      ]}
+  }
+}

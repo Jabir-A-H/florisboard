@@ -30,6 +30,8 @@
     { "id": "ast", "authors": [ "Softastur" ] },
     { "id": "bg", "authors": [ "iorvethe" ] },
     { "id": "bn-unijoy", "authors": [ "RHJihan" ] },
+    { "id": "bn-jatiyo", "authors": [ "jabir" ] },
+    { "id": "bn-probhat", "authors": [ "jabir" ] },
     { "id": "ca", "authors": [ "mikelloc" ] },
     { "id": "cjk", "authors": [ "moonbeamcelery" ] },
     { "id": "ckb", "authors": [ "GoRaN" ] },
@@ -733,6 +735,28 @@
       "popupMapping": "org.florisboard.localization:bn-unijoy",
       "preferred": {
         "characters": "org.florisboard.layouts:bengali_unijoy",
+        "numericRow": "org.florisboard.layouts:bengali",
+        "numericAdvanced": "org.florisboard.layouts:bengali"
+      }
+    },
+    {
+      "languageTag": "bn-BD",
+      "composer": "org.florisboard.composers:appender",
+      "currencySet": "org.florisboard.currencysets:bangladeshi_taka",
+      "popupMapping": "org.florisboard.localization:bn-jatiyo",
+      "preferred": {
+        "characters": "org.florisboard.layouts:bengali_jatiyo",
+        "numericRow": "org.florisboard.layouts:bengali",
+        "numericAdvanced": "org.florisboard.layouts:bengali"
+      }
+    },
+    {
+      "languageTag": "bn-BD",
+      "composer": "org.florisboard.composers:appender",
+      "currencySet": "org.florisboard.currencysets:bangladeshi_taka",
+      "popupMapping": "org.florisboard.localization:bn-probhat",
+      "preferred": {
+        "characters": "org.florisboard.layouts:bengali_probhat",
         "numericRow": "org.florisboard.layouts:bengali",
         "numericAdvanced": "org.florisboard.layouts:bengali"
       }
