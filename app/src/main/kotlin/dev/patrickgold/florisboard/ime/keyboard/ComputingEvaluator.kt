@@ -57,9 +57,11 @@ import dev.patrickgold.florisboard.ime.input.InputShiftState
 import dev.patrickgold.florisboard.ime.text.key.KeyCode
 import dev.patrickgold.florisboard.ime.text.key.KeyType
 import dev.patrickgold.florisboard.ime.window.ImeWindowMode
+import dev.patrickgold.florisboard.keyboardManager
 import dev.patrickgold.florisboard.lib.FlorisLocale
 import dev.patrickgold.florisboard.lib.compose.vectorResource
 import org.florisboard.lib.compose.icons.ForwardDelete
+import org.florisboard.lib.kotlin.tryOrNull
 
 interface ComputingEvaluator {
     val version: Int
@@ -143,7 +145,21 @@ fun ComputingEvaluator.computeLabel(data: KeyData): String? {
             KeyCode.SPACE, KeyCode.CJK_SPACE -> {
                 when (evaluator.keyboard.mode) {
                     KeyboardMode.CHARACTERS -> evaluator.subtype.primaryLocale.let { locale ->
-                        computeLanguageDisplayName(locale, evaluator.displayLanguageNamesIn())
+                        val layoutLabel = evaluator.context()?.let { ctx ->
+                            tryOrNull {
+                                ctx.keyboardManager().value.resources.layouts.value[LayoutType.CHARACTERS]?.get(evaluator.subtype.layoutMap.characters)?.label
+                            }
+                        } ?: when (evaluator.subtype.layoutMap.characters.componentId) {
+                            "bengali_jatiyo" -> "জাতীয়"
+                            "bengali_probhat" -> "প্রভাত"
+                            "bengali_unijoy" -> "Unijoy"
+                            else -> null
+                        }
+                        if (locale.language == "bn" && !layoutLabel.isNullOrBlank()) {
+                            layoutLabel
+                        } else {
+                            computeLanguageDisplayName(locale, evaluator.displayLanguageNamesIn())
+                        }
                     }
                     else -> null
                 }

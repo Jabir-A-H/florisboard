@@ -59,14 +59,14 @@
       },
       {
         "id": "bengali_jatiyo",
-        "label": "বাংলা (জাতীয়)",
+        "label": "জাতীয়",
         "authors": [ "jabir" ],
         "direction": "ltr",
         "modifier": "org.florisboard.layouts:bengali_unijoy"
       },
       {
         "id": "bengali_probhat",
-        "label": "বাংলা (প্রভাত)",
+        "label": "প্রভাত",
         "authors": [ "jabir" ],
         "direction": "ltr",
         "modifier": "org.florisboard.layouts:bengali_unijoy"
