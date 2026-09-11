@@ -19,7 +19,19 @@
     "ক": { "main": { "code": 2454, "label": "খ" } },
     "ত": { "main": { "code": 2510, "label": "ৎ" }, "relevant": [{ "code": 2469, "label": "থ" }] },
     "দ": { "main": { "code": 2471, "label": "ধ" } },
-    "ঁ": { "main": { "code": 2435, "label": "ঃ" } },
+    "ঁ": { "main": { "code": 2435, "label": "ঃ" }, "relevant": [
+        { "code": 2492, "label": "়" },
+        { "code": 2544, "label": "ৰ" },
+        { "code": 2545, "label": "ৱ" },
+        { "code": 2519, "label": "ৗ" },
+        { "code": 2500, "label": "ৄ" },
+        { "code": 2528, "label": "ৠ" },
+        { "code": 2444, "label": "ঌ" },
+        { "code": 2529, "label": "ৡ" },
+        { "code": 2530, "label": "ৢ" },
+        { "code": 2531, "label": "ৣ" }
+      ]
+    },
     "ো": { "main": { "code": 2451, "label": "ও" } },
     "ে": { "main": { "code": 2447, "label": "এ" } },
     "র": { "main": { "code": 2482, "label": "ল" }, "relevant": [
@@ -50,11 +62,22 @@
         { "$": "layout_direction_selector", "ltr": { "code": 41, "label": ")" }, "rtl": { "code": 40, "label": ")" } },
         { "code": 64, "label": "@" },
         { "code": 35, "label": "#" },
+        { "code": 8205, "label": "▸|◂" },
+        { "code": 8204, "label": "◂|▸" },
         { "code": 37, "label": "%" },
         { "code": 43, "label": "+" },
         { "code": 38, "label": "&" },
         { "code": 2405, "label": "॥" }
-      ]}
+      ]
+    },
+    "~enter": {
+      "main": { "$": "multi_text_key", "codePoints": [10], "label": "↵" },
+      "relevant": [
+        { "code": -212, "label": "ime_ui_mode_media", "type": "system_gui" },
+        { "code": -213, "label": "ime_ui_mode_clipboard", "type": "system_gui" },
+        { "code": -112, "label": "compact_layout_to_right", "type": "system_gui" }
+      ]
+    }
   },
   "uri": {
     "~right": { "main": { "code": -255, "label": ".com" }, "relevant": [
